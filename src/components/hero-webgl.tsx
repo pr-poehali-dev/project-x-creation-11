@@ -114,7 +114,7 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "ParticleLab".split(" ")
+  const titleWords = "Flars".split(" ")
   const subtitle = "Лазерные анализаторы размера частиц для точных измерений."
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)

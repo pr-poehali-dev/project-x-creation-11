@@ -5,7 +5,7 @@ export function FAQSection() {
     {
       question: "Какой диапазон размеров частиц измеряет прибор?",
       answer:
-        "Анализаторы ParticleLab измеряют частицы в диапазоне от 10 нм до 3500 мкм методом лазерной дифракции — от наноэмульсий до крупных гранул.",
+        "Анализаторы Flars измеряют частицы в диапазоне от 10 нм до 3500 мкм методом лазерной дифракции — от наноэмульсий до крупных гранул.",
     },
     {
       question: "Какой метод измерения используется?",
@@ -40,7 +40,7 @@ export function FAQSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-orbitron">Частые вопросы</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-space-mono">
-            Ответы на популярные вопросы об анализаторах ParticleLab, методах измерения и сервисе.
+            Ответы на популярные вопросы об анализаторах Flars, методах измерения и сервисе.
           </p>
         </div>
 
