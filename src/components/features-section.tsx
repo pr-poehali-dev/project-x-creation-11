@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Широкий диапазон измерений",
+    description: "Анализ частиц от 10 нм до 3500 мкм методом лазерной дифракции — от наноэмульсий до крупных гранул.",
+    icon: "range",
+    badge: "10 нм – 3.5 мм",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
-  },
-  {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
-  },
-  {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Высокая точность и повторяемость",
+    description: "Воспроизводимость результатов лучше 1% благодаря стабильной оптике и интеллектуальной калибровке.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Точность <1%",
+  },
+  {
+    title: "Сухой и мокрый ввод проб",
+    description: "Универсальные диспергаторы для порошков, суспензий и эмульсий без переналадки прибора.",
+    icon: "droplet",
+    badge: "2 в 1",
+  },
+  {
+    title: "Экспресс-анализ",
+    description: "Полный цикл измерения за 10–15 секунд с автоматическим расчётом распределения по размерам.",
+    icon: "zap",
+    badge: "15 сек",
+  },
+  {
+    title: "Соответствие стандартам",
+    description: "Полное соответствие ISO 13320 и фармакопеям GMP для лабораторий и контроля качества.",
+    icon: "shield",
+    badge: "ISO 13320",
+  },
+  {
+    title: "Умное ПО и отчёты",
+    description: "Наглядные графики распределения, экспорт в Excel/PDF и поддержка протоколов 21 CFR Part 11.",
+    icon: "chart",
+    badge: "Софт",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности анализатора</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Лабораторная точность измерения размера частиц для исследований и контроля качества
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "range" && "📏"}
+                    {feature.icon === "target" && "🎯"}
+                    {feature.icon === "droplet" && "💧"}
+                    {feature.icon === "zap" && "⚡"}
+                    {feature.icon === "shield" && "🛡️"}
+                    {feature.icon === "chart" && "📊"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
